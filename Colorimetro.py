@@ -1,3 +1,4 @@
+import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 from typing import Tuple, Dict, Sequence
@@ -338,3 +339,29 @@ x, y = xy_desde_angulos(Azul, Verde, Rojo, coeffs, xs, ys, zs, scale_factors=sca
 # --- Resultado ---
 print(f"Coordenadas x,y de tu medición son: x={x}, y={y}")
 
+st.title("¡Hola! Ingresá los angulos del triñometro")
+
+Azul = st.number_input("Ángulo Azul", min_value=0, max_value=360, value=30)
+Verde = st.number_input("Ángulo Verde", min_value=0, max_value=360, value=67)
+Rojo = st.number_input("Ángulo Rojo", min_value=0, max_value=360, value=282)
+
+x, y = xy_desde_angulos(Azul, Verde, Rojo, coeffs, xs, ys, zs, scale_factors=scales_factors)
+
+
+st.markdown(f"""
+<h1 style= font-size: 40px;'>
+Coordenadas del color:
+</h1>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+<h1 style='text-align: center; color: white; font-size: 40px;'>
+x = {x:.3f}
+</h1>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+<h1 style='text-align: center; color: white; font-size: 40px;'>
+y = {y:.3f}
+</h1>
+""", unsafe_allow_html=True)
