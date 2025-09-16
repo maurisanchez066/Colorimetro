@@ -150,4 +150,6 @@ El programa te permitirá:
 
 ## ⚠️ Advertencia
 
-Si modificaste algo incorrectamente y el programa no funciona, revisa cada uno de los pasos anteriores. Es crucial seguir las instrucciones exactamente como se indican para el correcto funcionamiento del sistema.
+Si modificaste algo incorrectamente y el programa no funciona, revisa cada uno de los pasos anteriores. Es crucial seguir las instrucciones exactamente como se indican para el correcto funcionamiento del sistema. 
+
+Si tienes más dudas puedes contactarme por mail! mauriciosanchez260602@gmail.com 
